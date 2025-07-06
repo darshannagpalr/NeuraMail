@@ -14,6 +14,7 @@ const trackEngagement = async (type, emailId, meta = {}) => {
   }
 };
 
+var x = 40;
 
 export default function RecipientProfile() {
   const handleEmotionClick = (emotion) => {
@@ -21,6 +22,7 @@ export default function RecipientProfile() {
       emotion,
       context: "RecipientProfile",
     });
+
     alert(`🧠 Emotion "${emotion}" recorded`);
   };
 
@@ -31,10 +33,10 @@ export default function RecipientProfile() {
         <h2 className="text-lg font-semibold mb-2">Emotional Response Breakdown</h2>
         <ul className="space-y-2 mb-4">
           <li className="flex justify-between">
-            <span>😊 Joy</span><span className="text-green-600 font-bold">40%</span>
+            <span>😊 Joy</span><span className="text-green-600 font-bold">{x+1}%</span>
           </li>
           <li className="flex justify-between">
-            <span>😐 Neutral</span><span className="text-yellow-500 font-bold">30%</span>
+            <span>😐 Neutral</span><span className="text-yellow-500 font-bold">{x-1}%</span>
           </li>
           <li className="flex justify-between">
             <span>😢 Sadness</span><span className="text-blue-500 font-bold">20%</span>
