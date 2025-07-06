@@ -55,4 +55,4 @@ graph LR
     C --> D(User Interacts);
     D --> E{Track Event};
     E -- Click / Open / Emotion --> F(Emit via WebSocket);
-    F --> G(Update Real-Time Dashboard);
+    F --> G(Update Real-Time Dashboard)
